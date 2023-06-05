@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+}
+
+.header__container {
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    width: 100%;
+}
+
+.logo {
+    height: 18px;
+    width: 113px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E9ECEF;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px 15px;
+    gap: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.form input, .form select {
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    border-style: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.form button {
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    background: #FD377E;
+    border-style: none;
+    color: white
+}
+
+.section__totalMoney {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E9ECEF;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    height: 96px;
+}
+
+.section__totalMoney h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.cardTransaction {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E9ECEF;
+    background-color: #F8F9FA;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.total__money {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FD377E;
+}
+
+.no__content {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #343A40;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.trans__description {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+}
+
+.trans__type, .trans__value {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #343A40;
+}
+
+.trans__button {
+    height: 19px;
+    width: 48px;
+    border-radius: 2px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #212529;
+    cursor: pointer;
+    background-color: #E9ECEF;
+    border-style: none;
+}
+
+@media (min-width: 1024px) {
+    .form {
+        width: 20%;
+        position: absolute;
+        left: 15%;
+        top: 15%;
+    }
+    .section__totalMoney {
+        width: 20%;
+        position: absolute;
+        top: 65%;
+        left: 15%;
+    }
+    h1 {
+        position: absolute;
+        top: 20%;
+        right: 51%;
+    }
+    .no__content {
+        position: absolute;
+        top: 30%;
+        right: 33.5%;
+        font-size: 22px;
+    }
+    .transactions__list {
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        gap: 10px;
+    }
+    .cardTransaction {
+        position: relative;
+        padding: 20px;
+    }
+    .trans__value {
+        position: absolute;
+        right: 2.5%;
+        top: 20%;
+    }
+    .trans__button {
+        position: absolute;
+        right: 2.5%;
+        top: 50%;
+    }
+}
+
